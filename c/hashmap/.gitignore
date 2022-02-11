@@ -1,2 +1,3 @@
-*.o hashexec
+*.o 
+hashexec
 \untr
