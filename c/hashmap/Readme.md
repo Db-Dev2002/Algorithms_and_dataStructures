@@ -1,3 +1,3 @@
 ## Academic work and research
 
-## Hashing funtions and associated maps
+# Hashing functions and associated maps

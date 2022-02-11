@@ -1,4 +1,4 @@
-EXEC  = $(shell basename $$(pwd))
+EXEC  = "hashexec"
 ARCH := $(shell uname -p)
 #MODIFY IF NEDDED
 ifeq ($(ARCH), X86_64)
