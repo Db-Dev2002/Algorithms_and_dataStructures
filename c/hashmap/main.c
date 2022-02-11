@@ -1,3 +1,6 @@
 #include <stdio.h>
 
-int main() { printf("it works"); }
+int main() {
+    //
+    return 0;
+}
