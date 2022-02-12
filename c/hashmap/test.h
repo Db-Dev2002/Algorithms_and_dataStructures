@@ -12,6 +12,7 @@
 #define _tstart puts("-----Starting tests!-----");
 
 #define _tfail(STR) printf("!!!-TEST-FAILED--->%s\n", STR);
+#define _tinfo(STR) printf("   -> %s", STR);
 #define _tpass(STR) printf("!!!-TEST-PASSED--->%s\n", STR);
 
 // benchmarks
