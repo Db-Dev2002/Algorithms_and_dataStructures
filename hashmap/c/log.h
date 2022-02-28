@@ -29,14 +29,16 @@ typedef struct Log { // never constructed, no time! \:
 #define L_TRACE "|TRACE|\t" // detailed steps of an operation
 #endif                      // L_ERR // log to files
 
-#ifndef LC_ERR
-#define LC_ERR "\033[91m|ERROR|\t"
-#define LC_FATAL "\033[91m|FATAL|\t"
-#define LC_WARN "\033[93m|WARN |\t"
-#define LC_WARN_R "\033[91m|WARN |\t"
-#define LC_INFO "\033[92m|INFO |\t"
-#define LC_RESET "\033[0m"
-#endif // LC_ERR // log to terminal
+// ansi terminal color codes to format output
+// !TODO check if terminal is supported
+#ifndef LC_E
+#define LC_E "\033[91m|ERROR|\t"
+#define LC_F "\033[91m|FATAL|\t"
+#define LC_W "\033[93m|WARN |\t"
+#define LC_WR "\033[91m|WARN |\t"
+#define LC_I "\033[92m|INFO |\t"
+#define LC_R "\033[0m"
+#endif // LC_E // log to terminal
 
 void log_to_file(const char *str);
 void log_errno_to_file(const uint8_t err);
