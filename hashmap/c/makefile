@@ -1,19 +1,21 @@
 EXEC  = "hashexec"
 ARCH := $(shell uname -p)
-#MODIFY IF NEDDED
+# Modify if needed.
 ifeq ($(ARCH), X86_64)
 	CC = gcc
 else
 	CC = clang
 endif
-CFLAGS= -c		\
-	-g		\
-	-W		\
-	-Wall		\
-	-pedantic
-SRC	= $(wildcard *.c)
-OBJ	= $(SRC:.c=.o)
-LDFL	= #libs like math...
+
+SRC  = $(wildcard *.c)
+OBJ  = $(SRC:.c=.o)
+LDFL = #libs like math...
+# Replace O3 with -g to debug.
+CFLAGS = -c			\
+	     -g			\
+	     -W			\
+		 -Wall		\
+	     -pedantic
 
 all: $(EXEC)
 
