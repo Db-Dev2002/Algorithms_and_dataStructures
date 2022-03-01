@@ -35,3 +35,7 @@ void log_errno_to_file(const uint8_t err) {
             tm->tm_sec, strerror(err));
     fclose(fp);
 }
+
+void print_trace() {
+    //
+}
