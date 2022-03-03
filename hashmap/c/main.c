@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -5,9 +6,7 @@
 #include <string.h>
 #include <time.h>
 
-int main() {
-    printf("%s:%3d", __FILE__, __LINE__);
-    // printf("%s", );
+int main(const int argc, const char **argv) {
     //
     return 0;
 }
